@@ -1,0 +1,27 @@
+device: cuda | chunk=8
+side images: (36834, 256, 256, 3) uint8 (7.2 GB)
+RAM plan: full dataset fits in RAM
+loaded side (36834, 256, 256, 3) in 4.2s
+episodes loaded: 719  frames loaded: 36834
+samples: train=29538  val=1544  chunk=8
+model: 13.20M params, bottleneck=256, chunk=8, img_hw=(256, 256)
+epoch   1/12  train 0.49925  val 0.18619  lr 3.00e-04   10.7s  <- best, saved
+epoch   2/12  train 0.13394  val 0.09094  lr 2.95e-04   10.0s  <- best, saved
+epoch   3/12  train 0.07871  val 0.06136  lr 2.80e-04    9.9s  <- best, saved
+epoch   4/12  train 0.05676  val 0.04960  lr 2.56e-04    9.8s  <- best, saved
+epoch   5/12  train 0.04610  val 0.04459  lr 2.25e-04    9.9s  <- best, saved
+  [eval epoch 5] launched bg subprocess pid=334486
+epoch   6/12  train 0.03988  val 0.03897  lr 1.89e-04   10.8s  <- best, saved
+epoch   7/12  train 0.03560  val 0.03649  lr 1.50e-04   10.9s  <- best, saved
+epoch   8/12  train 0.03237  val 0.03497  lr 1.11e-04   10.9s  <- best, saved
+epoch   9/12  train 0.03029  val 0.03328  lr 7.51e-05   11.0s  <- best, saved
+epoch  10/12  train 0.02844  val 0.03213  lr 4.40e-05   11.0s  <- best, saved
+  [eval epoch 10] launched bg subprocess pid=335441
+epoch  11/12  train 0.02750  val 0.03110  lr 2.02e-05   12.5s  <- best, saved
+epoch  12/12  train 0.02691  val 0.03112  lr 5.21e-06   13.6s
+  [eval epoch 12] launched bg subprocess pid=336193
+  [eval epoch 5] 33/100 = 33.0%
+  [eval epoch 10] 58/100 = 58.0%
+  [eval epoch 12] 59/100 = 59.0%
+
+Done. Best val 0.03110 -> bc_cube_val.pt

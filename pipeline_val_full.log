@@ -1,0 +1,168 @@
+=== STAGE A: VALIDATION START 2026-06-10T14:04:48Z eps=800 epochs=12 ===
+val collect rc=0 2026-06-10T14:21:56Z
+  [   403/800] workers=[17, 17, 17, 17, 17, 17, 17, 16, 17, 17, 17, 17, 17, 17, 17, 17, 16, 17, 17, 16, 16, 17, 17, 16] 0.78 ep/s  elapsed 0:08:35  ETA 0:08:28
+  [   500/800] workers=[21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 20, 21, 21, 20, 20, 21, 21, 20] 0.78 ep/s  elapsed 0:10:41  ETA 0:06:24
+  [   602/800] workers=[25, 26, 25, 25, 25, 25, 26, 25, 25, 26, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 24, 25, 25, 25] 0.79 ep/s  elapsed 0:12:46  ETA 0:04:12
+  [   702/800] workers=[29, 30, 29, 30, 29, 29, 30, 29, 30, 30, 29, 29, 29, 30, 30, 29, 29, 29, 29, 29, 28, 29, 29, 29] 0.79 ep/s  elapsed 0:14:51  ETA 0:02:04
+  [   800/800] workers=[34, 34, 34, 34, 34, 34, 34, 34, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33] 0.79 ep/s  elapsed 0:16:46  ETA 0:00:00
+
+All workers done in 0:16:46. Kept 719 episodes. Merging into dataset_val.npz ...
+Saved dataset_val.npz (7.24 GB) in 0:17:07: 36834 frames from 719 episodes (89.9% solve rate).
+val train rc=0 2026-06-10T14:44:43Z
+epoch   1/12  train 0.49925  val 0.18619  lr 3.00e-04   10.7s  <- best, saved
+epoch   2/12  train 0.13394  val 0.09094  lr 2.95e-04   10.0s  <- best, saved
+epoch   3/12  train 0.07871  val 0.06136  lr 2.80e-04    9.9s  <- best, saved
+epoch   4/12  train 0.05676  val 0.04960  lr 2.56e-04    9.8s  <- best, saved
+epoch   5/12  train 0.04610  val 0.04459  lr 2.25e-04    9.9s  <- best, saved
+  [eval epoch 5] launched bg subprocess pid=334486
+epoch   6/12  train 0.03988  val 0.03897  lr 1.89e-04   10.8s  <- best, saved
+epoch   7/12  train 0.03560  val 0.03649  lr 1.50e-04   10.9s  <- best, saved
+epoch   8/12  train 0.03237  val 0.03497  lr 1.11e-04   10.9s  <- best, saved
+epoch   9/12  train 0.03029  val 0.03328  lr 7.51e-05   11.0s  <- best, saved
+epoch  10/12  train 0.02844  val 0.03213  lr 4.40e-05   11.0s  <- best, saved
+  [eval epoch 10] launched bg subprocess pid=335441
+epoch  11/12  train 0.02750  val 0.03110  lr 2.02e-05   12.5s  <- best, saved
+epoch  12/12  train 0.02691  val 0.03112  lr 5.21e-06   13.6s
+  [eval epoch 12] launched bg subprocess pid=336193
+  [eval epoch 5] 33/100 = 33.0%
+  [eval epoch 10] 58/100 = 58.0%
+  [eval epoch 12] 59/100 = 59.0%
+
+Done. Best val 0.03110 -> bc_cube_val.pt
+val eval rc=0 2026-06-10T14:52:18Z
+running 100 eval episodes on 24 workers (decay=0.01, max_steps=170)...
+  policy eval done in 451.0s
+
+======================================================================
+  bc_cube_val.pt                       (100 eps, decay 0.01)
+  overall success (farther stacked on nearer) : 71/100 = 71.0%
+  correct-selection (picked FARTHER cube)      : 91/100 = 91.0%
+  grasp success (farther cube lifted/moved)    : 91/100 = 91.0%
+  place-on-top (landed on the nearer cube)     : 71/100 = 71.0%
+  -- failure modes --
+  wrong_cube_picked     : 2/100 = 2.0%
+  missed_grasp          : 5/100 = 5.0%
+  placement_miss        : 20/100 = 20.0%
+  knocked_over_unstable : 2/100 = 2.0%
+  -- solver baseline overall : 94/100 = 94.0%
+  elapsed 454.1s
+======================================================================
+wrote eval_val.json
+=== GATE 2026-06-10T14:52:18Z ===
+gate: n=100 grasp=91 place_on_top=71 overall=71 grasp_rate=91.00%
+GATE RESULT: PASS
+=== GATE PASSED -> STAGE B: FULL PIPELINE 2026-06-10T14:52:18Z ===
+=== PIPELINE START 2026-06-10T14:52:18Z  nproc=1 collect_workers=24 episodes=8000 ===
+=== COLLECT (8000 eps, 24 workers, 256px, successes-only) ===
+collect exited rc=0 at 2026-06-10T17:42:09Z
+  [  7604/8000] workers=[320, 317, 317, 314, 316, 320, 316, 315, 318, 316, 314, 319, 316, 317, 316, 319, 318, 316, 318, 317, 315, 316, 318, 316] 0.80 ep/s  elapsed 2:37:48  ETA 0:08:13
+  [  7700/8000] workers=[324, 321, 321, 318, 320, 324, 319, 319, 322, 320, 318, 323, 320, 321, 320, 323, 322, 320, 322, 321, 319, 320, 322, 321] 0.80 ep/s  elapsed 2:39:48  ETA 0:06:13
+  [  7800/8000] workers=[328, 326, 325, 322, 324, 328, 324, 323, 327, 325, 322, 327, 324, 325, 324, 327, 326, 324, 326, 325, 323, 324, 326, 325] 0.80 ep/s  elapsed 2:41:54  ETA 0:04:09
+  [  7900/8000] workers=[332, 330, 329, 326, 328, 332, 328, 327, 331, 329, 327, 331, 329, 329, 328, 331, 330, 328, 331, 329, 328, 328, 330, 329] 0.80 ep/s  elapsed 2:43:59  ETA 0:02:04
+  [  8000/8000] workers=[334, 334, 334, 334, 334, 334, 334, 334, 333, 333, 333, 333, 333, 333, 333, 333, 333, 333, 333, 333, 333, 333, 333, 333] 0.80 ep/s  elapsed 2:46:24  ETA 0:00:00
+
+All workers done in 2:46:24. Kept 7270 episodes. Merging into dataset_cube_stack.npz ...
+Saved dataset_cube_stack.npz (73.36 GB) in 2:49:50: 373051 frames from 7270 episodes (90.9% solve rate).
+=== TRAIN (25 epochs, lr 3e-4, batch 256, workers 8, chunk 8, augment, decay 0.01) ===
+train exited rc=0 at 2026-06-10T18:37:46Z
+epoch   7/25  train 0.00842  val 0.00767  lr 2.59e-04   94.3s  <- best, saved
+epoch   8/25  train 0.00749  val 0.00759  lr 2.46e-04   94.5s  <- best, saved
+epoch   9/25  train 0.00678  val 0.00674  lr 2.30e-04   93.8s  <- best, saved
+epoch  10/25  train 0.00614  val 0.00604  lr 2.14e-04   94.0s  <- best, saved
+  [eval epoch 10] launched bg subprocess pid=349203
+epoch  11/25  train 0.00566  val 0.00557  lr 1.96e-04  112.1s  <- best, saved
+epoch  12/25  train 0.00505  val 0.00598  lr 1.78e-04  108.8s
+epoch  13/25  train 0.00467  val 0.00515  lr 1.59e-04  106.1s  <- best, saved
+epoch  14/25  train 0.00423  val 0.00481  lr 1.41e-04  101.7s  <- best, saved
+  [eval epoch 5] 76/100 = 76.0%  (sel=95 grasp=95 place_on_top=76)
+epoch  15/25  train 0.00378  val 0.00480  lr 1.22e-04   99.4s  <- best, saved
+  [eval epoch 15] launched bg subprocess pid=350357
+epoch  16/25  train 0.00344  val 0.00434  lr 1.04e-04  107.8s  <- best, saved
+epoch  17/25  train 0.00311  val 0.00419  lr 8.62e-05  107.1s  <- best, saved
+epoch  18/25  train 0.00282  val 0.00398  lr 6.97e-05  108.4s  <- best, saved
+epoch  19/25  train 0.00258  val 0.00375  lr 5.45e-05  101.5s  <- best, saved
+  [eval epoch 10] 84/100 = 84.0%  (sel=96 grasp=96 place_on_top=84)
+epoch  20/25  train 0.00237  val 0.00377  lr 4.07e-05   97.8s
+  [eval epoch 20] launched bg subprocess pid=351519
+epoch  21/25  train 0.00217  val 0.00355  lr 2.87e-05  107.1s  <- best, saved
+epoch  22/25  train 0.00204  val 0.00346  lr 1.86e-05  105.8s  <- best, saved
+epoch  23/25  train 0.00193  val 0.00343  lr 1.06e-05  106.4s  <- best, saved
+epoch  24/25  train 0.00186  val 0.00342  lr 4.81e-06  103.4s  <- best, saved
+epoch  25/25  train 0.00180  val 0.00339  lr 1.28e-06  101.2s  <- best, saved
+  [eval epoch 25] launched bg subprocess pid=352661
+  [eval epoch 15] 88/100 = 88.0%  (sel=96 grasp=96 place_on_top=88)
+  [eval epoch 20] 86/100 = 86.0%
+  [eval epoch 25] 91/100 = 91.0%
+
+Done. Best val 0.00339 -> bc_cube_stack.pt
+=== FINALIZE (200-ep diagnostic eval seed 20000 + demo mp4 + session notes) ===
+=== 200-ep diagnostic eval (24 workers) ===
+running 200 eval episodes on 24 workers (decay=0.01, max_steps=170)...
+  policy eval done in 847.8s
+
+======================================================================
+  bc_cube_stack.pt                     (200 eps, decay 0.01)
+  overall success (farther stacked on nearer) : 183/200 = 91.5%
+  correct-selection (picked FARTHER cube)      : 199/200 = 99.5%
+  grasp success (farther cube lifted/moved)    : 199/200 = 99.5%
+  place-on-top (landed on the nearer cube)     : 183/200 = 91.5%
+  -- failure modes --
+  wrong_cube_picked     : 1/200 = 0.5%
+  missed_grasp          : 0/200 = 0.0%
+  placement_miss        : 16/200 = 8.0%
+  knocked_over_unstable : 0/200 = 0.0%
+  -- solver baseline overall : 182/200 = 91.0%
+  elapsed 852.9s
+======================================================================
+wrote eval_cube_stack_final.json
+=== record success demo mp4 ===
+seed 20000: SUCCESS  (103.8s) -> demo_cube_stack_seed20000.mp4
+  saved success rollout to demo_cube_stack.mp4
+=== render session notes ===
+wrote SESSION_NOTES_2026-06-10_cube_stack.md
+=== copy deliverables to /home/ubuntu/Downloads/cube_stack_2026-06-10 ===
+deliverables in /home/ubuntu/Downloads/cube_stack_2026-06-10:
+total 310332
+drwxrwxr-x 3 ubuntu ubuntu     4096 Jun 10 18:53 .
+drwxrwxr-x 4 ubuntu ubuntu     4096 Jun 10 18:53 ..
+-rw-rw-r-- 1 ubuntu ubuntu     5677 Jun 10 18:53 DECISIONS.md
+-rw-rw-r-- 1 ubuntu ubuntu     6283 Jun 10 18:53 SESSION_NOTES_2026-06-10_cube_stack.md
+-rw-rw-r-- 1 ubuntu ubuntu 52805297 Jun 10 18:53 bc_cube_stack.pt
+-rw-rw-r-- 1 ubuntu ubuntu 52805457 Jun 10 18:53 bc_cube_stack_epoch10.pt
+-rw-rw-r-- 1 ubuntu ubuntu 52805457 Jun 10 18:53 bc_cube_stack_epoch15.pt
+-rw-rw-r-- 1 ubuntu ubuntu 52805457 Jun 10 18:53 bc_cube_stack_epoch20.pt
+-rw-rw-r-- 1 ubuntu ubuntu 52805457 Jun 10 18:53 bc_cube_stack_epoch25.pt
+-rw-rw-r-- 1 ubuntu ubuntu 52805437 Jun 10 18:53 bc_cube_stack_epoch5.pt
+-rw-rw-r-- 1 ubuntu ubuntu    49315 Jun 10 18:53 bc_cube_stack_eval100_epoch10.json
+-rw-rw-r-- 1 ubuntu ubuntu      796 Jun 10 18:53 bc_cube_stack_eval100_epoch10.log
+-rw-rw-r-- 1 ubuntu ubuntu    49325 Jun 10 18:53 bc_cube_stack_eval100_epoch15.json
+-rw-rw-r-- 1 ubuntu ubuntu      794 Jun 10 18:53 bc_cube_stack_eval100_epoch15.log
+-rw-rw-r-- 1 ubuntu ubuntu    49346 Jun 10 18:53 bc_cube_stack_eval100_epoch20.json
+-rw-rw-r-- 1 ubuntu ubuntu      796 Jun 10 18:53 bc_cube_stack_eval100_epoch20.log
+-rw-rw-r-- 1 ubuntu ubuntu    49298 Jun 10 18:53 bc_cube_stack_eval100_epoch25.json
+-rw-rw-r-- 1 ubuntu ubuntu      794 Jun 10 18:53 bc_cube_stack_eval100_epoch25.log
+-rw-rw-r-- 1 ubuntu ubuntu    49392 Jun 10 18:53 bc_cube_stack_eval100_epoch5.json
+-rw-rw-r-- 1 ubuntu ubuntu      795 Jun 10 18:53 bc_cube_stack_eval100_epoch5.log
+-rw-rw-r-- 1 ubuntu ubuntu      269 Jun 10 18:53 bc_cube_stack_inflight_eval.log
+-rw-rw-r-- 1 ubuntu ubuntu    10107 Jun 10 18:53 check_pixel_floor.py
+-rw-rw-r-- 1 ubuntu ubuntu    14859 Jun 10 18:53 collect_cube_stack.log
+-rw-rw-r-- 1 ubuntu ubuntu    18385 Jun 10 18:53 collect_dataset_cube_stack.py
+-rw-rw-r-- 1 ubuntu ubuntu    11492 Jun 10 18:53 cube_stack_env.py
+-rw-rw-r-- 1 ubuntu ubuntu      839 Jun 10 18:53 cube_stack_full_eval.log
+-rw-rw-r-- 1 ubuntu ubuntu     9502 Jun 10 18:53 cube_stack_solver.py
+-rw-rw-r-- 1 ubuntu ubuntu   269585 Jun 10 18:53 demo_cube_stack.mp4
+-rw-rw-r-- 1 ubuntu ubuntu      110 Jun 10 18:53 demo_record.log
+-rw-rw-r-- 1 ubuntu ubuntu    11888 Jun 10 18:53 eval_bc_cube_stack.py
+-rw-rw-r-- 1 ubuntu ubuntu   195770 Jun 10 18:53 eval_cube_stack_final.json
+-rw-rw-r-- 1 ubuntu ubuntu     2430 Jun 10 18:53 finalize.sh
+-rw-rw-r-- 1 ubuntu ubuntu     9544 Jun 10 18:53 learm_scene_cube_stack.xml
+drwxrwxr-x 2 ubuntu ubuntu     4096 Jun 10 18:53 pixel_floor_check
+-rw-rw-r-- 1 ubuntu ubuntu     6219 Jun 10 18:53 record_bc_cube_stack.py
+-rw-rw-r-- 1 ubuntu ubuntu    11270 Jun 10 18:53 render_notes.py
+-rw-rw-r-- 1 ubuntu ubuntu     2504 Jun 10 18:53 run_pipeline.sh
+-rw-rw-r-- 1 ubuntu ubuntu    16587 Jun 10 18:53 train_bc_cube_stack.py
+-rw-rw-r-- 1 ubuntu ubuntu     2794 Jun 10 18:53 train_cube_stack.log
+FINALIZE DONE
+finalize exited rc=0 at 2026-06-10T18:53:47Z
+=== PIPELINE DONE 2026-06-10T18:53:47Z ===
+=== ALL DONE rc=0 2026-06-10T18:53:47Z ===

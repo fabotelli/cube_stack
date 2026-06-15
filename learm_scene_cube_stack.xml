@@ -1,0 +1,188 @@
+<!-- ===================================================================== -->
+<!--  Two-cube STACKING scene for the real LeArm (MuJoCo 3.x / MJCF)        -->
+<!-- ===================================================================== -->
+<!--                                                                       -->
+<!--  Sibling of learm_scene_dice_sort.xml, but:                           -->
+<!--    * two IDENTICAL red cubes ('cube_a', 'cube_b') -- no colour cue.    -->
+<!--    * NO bins / no mocap bodies (the goal is to stack one cube on the   -->
+<!--      other, not to drop them anywhere).                                -->
+<!--  Everything else (arm chain, gripper, cameras, table, pedestal,       -->
+<!--  collision filtering, actuators, equality couplings) is unchanged      -->
+<!--  from the dice-sort scene.                                            -->
+<!-- ===================================================================== -->
+<mujoco model="learm_cube_stack">
+
+  <compiler angle="radian" meshdir="meshes" autolimits="true"/>
+  <option timestep="0.002" gravity="0 0 -9.81" integrator="implicit"
+          iterations="200" noslip_iterations="10"/>
+
+  <visual>
+    <global offwidth="1280" offheight="720"/>
+    <quality shadowsize="2048"/>
+    <headlight diffuse="0.6 0.6 0.6" ambient="0.4 0.4 0.4"/>
+  </visual>
+
+  <default>
+    <default class="arm">
+      <joint type="hinge" damping="0.6" armature="0.01" range="-1.5708 1.5708"/>
+      <geom  type="mesh" rgba="0.55 0.57 0.62 1" contype="0" conaffinity="0"/>
+    </default>
+
+    <default class="finger">
+      <joint type="hinge" damping="0.2" armature="0.005"/>
+      <geom  type="mesh" rgba="0.15 0.15 0.18 1" contype="0" conaffinity="0"/>
+    </default>
+
+    <default class="pad">
+      <geom type="box" rgba="0.1 0.5 0.12 1" friction="3.0 0.1 0.002"
+            condim="4" solimp="0.999 0.9999 0.0001 0.5 2"
+            contype="4" conaffinity="1"/>
+    </default>
+
+    <default class="env">
+      <geom contype="2" conaffinity="1"/>
+    </default>
+  </default>
+
+  <asset>
+    <texture name="grid" type="2d" builtin="checker"
+             rgb1="0.20 0.28 0.36" rgb2="0.10 0.14 0.18" width="300" height="300"/>
+    <material name="grid"  texture="grid" texrepeat="8 8" reflectance="0.1"/>
+    <material name="table" rgba="0.75 0.60 0.45 1"/>
+
+    <!-- BOTH cubes share the same saturated-red material: identical appearance
+         is the whole point -- the policy must localise both and infer which is
+         farther / nearer from geometry alone, not colour. -->
+    <material name="cube_red" rgba="0.90 0.10 0.10 1"/>
+
+    <mesh name="base"     file="base.stl"/>
+    <mesh name="shoulder" file="shoulder.stl"/>
+    <mesh name="humerus"  file="humerus.stl"/>
+    <mesh name="forearm"  file="forearm.stl"/>
+    <mesh name="wrist"    file="wrist.stl"/>
+    <mesh name="hand"     file="hand.stl"/>
+    <mesh name="carpalL"  file="carpal-left.stl"/>
+    <mesh name="carpalR"  file="carpal-right.stl"/>
+    <mesh name="tendon"   file="tendon.stl"/>
+    <mesh name="finger"   file="finger.stl"/>
+  </asset>
+
+  <worldbody>
+    <!-- Two key lights so a single light's random dim doesn't put the back of
+         the scene into deep shadow. -->
+    <light pos="0.20 0.0 1.2" dir="0 0 -1" diffuse="0.7 0.7 0.7"/>
+    <light pos="0.20 -0.4 0.8" dir="0 0.4 -1" diffuse="0.4 0.4 0.4"/>
+    <geom name="floor" class="env" type="plane" size="2 2 0.1" material="grid"/>
+
+    <camera name="policy_cam" pos="0.35 -0.25 0.35" xyaxes="0.79616 0.60508 -0.00000 -0.32506 0.42771 0.84345"/>
+    <camera name="demo_cam"   pos="0.30 -0.50 0.60" xyaxes="0.93979 0.34174 -0.00000 -0.20831 0.57286 0.79274"/>
+
+    <!-- Work table: top at z = 0.15 m, spans x in [0.02, 0.30], y in [-0.16, 0.16]. -->
+    <body name="table" pos="0.16 0 0.075">
+      <geom name="table_top" class="env" type="box" size="0.14 0.16 0.075" material="table"/>
+    </body>
+
+    <geom name="pedestal" type="cylinder" size="0.05 0.105" pos="0 0 0.105"
+          rgba="0.25 0.25 0.28 1" contype="0" conaffinity="0"/>
+
+    <!-- ================================================================= -->
+    <!--  THE LeArm                                                          -->
+    <!-- ================================================================= -->
+    <body name="base_link" pos="0 0 0.21" gravcomp="1">
+      <geom type="mesh" mesh="base" rgba="0.7 0.7 0.72 1" contype="0" conaffinity="0"/>
+
+      <body name="shoulder_link" pos="0 0 0.059" gravcomp="1">
+        <joint name="shoulder_pan" class="arm" axis="0 0 1"/>
+        <geom class="arm" mesh="shoulder"/>
+
+        <body name="humerus_link" pos="-0.010 0 0.028" gravcomp="1">
+          <joint name="shoulder_lift" class="arm" axis="0 1 0"/>
+          <geom class="arm" mesh="humerus"/>
+
+          <body name="forearm_link" pos="0 0 0.105" gravcomp="1">
+            <joint name="elbow" class="arm" axis="0 -1 0"/>
+            <geom class="arm" mesh="forearm"/>
+
+            <body name="wrist_link" pos="0 0 0.090" gravcomp="1">
+              <joint name="wrist_flex" class="arm" axis="0 1 0"/>
+              <geom class="arm" mesh="wrist"/>
+
+              <body name="hand_link" pos="0 0 0.060" gravcomp="1">
+                <joint name="wrist_roll" class="arm" axis="0 0 1"/>
+                <geom class="arm" mesh="hand"/>
+
+                <camera name="wrist_cam" pos="0 0 0.05" xyaxes="1 0 0 0 -1 0"/>
+                <site name="pinch" pos="0 0 0.095" size="0.005" rgba="1 1 0 0" group="3"/>
+
+                <body name="grip_left_link" pos="0 0.015 0.030" euler="-1.5708 0 0" gravcomp="1">
+                  <joint name="grip_left" class="finger" axis="-1 0 0" range="-1.57 0"/>
+                  <geom class="finger" mesh="carpalL"/>
+                  <body name="finger_left_link" pos="0 0 0.030" euler="1.5708 0 0" gravcomp="1">
+                    <joint name="finger_left" class="finger" axis="-1 0 0" limited="false"/>
+                    <geom class="finger" mesh="finger"/>
+                    <geom name="pad_l" class="pad" size="0.012 0.005 0.013" pos="0 -0.016 0.038"/>
+                  </body>
+                </body>
+
+                <body name="grip_right_link" pos="0 -0.015 0.030" euler="1.5708 0 0" gravcomp="1">
+                  <joint name="grip_right" class="finger" axis="-1 0 0" limited="false"/>
+                  <geom class="finger" mesh="carpalR"/>
+                  <body name="finger_right_link" pos="0 0 0.030" euler="-1.5708 0 0" gravcomp="1">
+                    <joint name="finger_right" class="finger" axis="-1 0 0" limited="false"/>
+                    <geom class="finger" mesh="finger"/>
+                    <geom name="pad_r" class="pad" size="0.012 0.005 0.013" pos="0 0.016 0.038"/>
+                  </body>
+                </body>
+
+                <body name="tendon_left_link" pos="0 0.005 0.050" euler="-1.5708 0 0" gravcomp="1">
+                  <joint name="tendon_left" class="finger" axis="-1 0 0" limited="false"/>
+                  <geom type="mesh" mesh="tendon" rgba="0.4 0.4 0.45 1" contype="0" conaffinity="0"/>
+                </body>
+                <body name="tendon_right_link" pos="0 -0.005 0.050" euler="1.5708 0 0" gravcomp="1">
+                  <joint name="tendon_right" class="finger" axis="-1 0 0" limited="false"/>
+                  <geom type="mesh" mesh="tendon" rgba="0.4 0.4 0.45 1" contype="0" conaffinity="0"/>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+
+    <!-- ----------------------------------------------------------------- -->
+    <!--  Two identical red cubes (1.9 cm side), free joints.               -->
+    <!-- ----------------------------------------------------------------- -->
+    <body name="cube_a" pos="0.155 -0.040 0.163">
+      <freejoint name="cube_a_free"/>
+      <geom name="cube_a_geom" type="box" size="0.0095 0.0095 0.0095" material="cube_red"
+            friction="3.0 0.1 0.002" condim="4" density="1312"
+            solimp="0.999 0.9999 0.0001 0.5 2" contype="1" conaffinity="3"/>
+    </body>
+
+    <body name="cube_b" pos="0.155 0.020 0.163">
+      <freejoint name="cube_b_free"/>
+      <geom name="cube_b_geom" type="box" size="0.0095 0.0095 0.0095" material="cube_red"
+            friction="3.0 0.1 0.002" condim="4" density="1312"
+            solimp="0.999 0.9999 0.0001 0.5 2" contype="1" conaffinity="3"/>
+    </body>
+
+  </worldbody>
+
+  <equality>
+    <joint joint1="grip_right"   joint2="grip_left" polycoef="0 -1 0 0 0"/>
+    <joint joint1="tendon_left"  joint2="grip_left" polycoef="0  1 0 0 0"/>
+    <joint joint1="tendon_right" joint2="grip_left" polycoef="0 -1 0 0 0"/>
+    <joint joint1="finger_left"  joint2="grip_left" polycoef="0 -1 0 0 0"/>
+    <joint joint1="finger_right" joint2="grip_left" polycoef="0  1 0 0 0"/>
+  </equality>
+
+  <actuator>
+    <position name="a_pan"   joint="shoulder_pan"  kp="20" kv="2"  forcerange="-20 20" ctrlrange="-1.57 1.57"/>
+    <position name="a_lift"  joint="shoulder_lift" kp="20" kv="2"  forcerange="-20 20" ctrlrange="-1.57 1.57"/>
+    <position name="a_elbow" joint="elbow"         kp="20" kv="2"  forcerange="-20 20" ctrlrange="-1.57 1.57"/>
+    <position name="a_wflex" joint="wrist_flex"    kp="10" kv="1"  forcerange="-15 15" ctrlrange="-1.57 1.57"/>
+    <position name="a_wroll" joint="wrist_roll"    kp="10" kv="1"  forcerange="-15 15" ctrlrange="-1.57 1.57"/>
+    <position name="a_grip"  joint="grip_left"     kp="25" kv="1.5"  forcerange="-12 12" ctrlrange="-1.57 0"/>
+  </actuator>
+
+</mujoco>

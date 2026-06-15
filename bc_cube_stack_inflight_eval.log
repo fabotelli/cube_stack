@@ -1,0 +1,5 @@
+  [eval epoch 5] 76/100 = 76.0%  (sel=95 grasp=95 place_on_top=76)
+  [eval epoch 10] 84/100 = 84.0%  (sel=96 grasp=96 place_on_top=84)
+  [eval epoch 15] 88/100 = 88.0%  (sel=96 grasp=96 place_on_top=88)
+  [eval epoch 20] 86/100 = 86.0%
+  [eval epoch 25] 91/100 = 91.0%

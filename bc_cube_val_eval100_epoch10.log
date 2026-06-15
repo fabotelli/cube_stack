@@ -1,0 +1,17 @@
+running 100 eval episodes on 8 workers (decay=0.01, max_steps=170)...
+  policy eval done in 1237.2s
+
+======================================================================
+  bc_cube_val_epoch10.pt               (100 eps, decay 0.01)
+  overall success (farther stacked on nearer) : 58/100 = 58.0%
+  correct-selection (picked FARTHER cube)      : 81/100 = 81.0%
+  grasp success (farther cube lifted/moved)    : 81/100 = 81.0%
+  place-on-top (landed on the nearer cube)     : 58/100 = 58.0%
+  -- failure modes --
+  wrong_cube_picked     : 1/100 = 1.0%
+  missed_grasp          : 16/100 = 16.0%
+  placement_miss        : 23/100 = 23.0%
+  knocked_over_unstable : 2/100 = 2.0%
+  elapsed 1237.3s
+======================================================================
+wrote bc_cube_val_eval100_epoch10.json

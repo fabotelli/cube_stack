@@ -1,0 +1,2124 @@
+{
+  "policy": "bc_cube_val_epoch5.pt",
+  "episodes": 100,
+  "start_seed": 20000,
+  "ensemble_decay": 0.01,
+  "max_steps": 170,
+  "rate": 50,
+  "elapsed_s": 1245.4500357680954,
+  "policy_summary": {
+    "n": 100,
+    "overall_success": 33,
+    "correct_selection": 72,
+    "grasp_success": 72,
+    "place_on_top": 33,
+    "wrong_cube_picked": 0,
+    "missed_grasp": 28,
+    "placement_miss": 39,
+    "knocked_over_unstable": 0
+  },
+  "solver_summary": null,
+  "policy_rows": [
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.16338465165918076,
+        0.03275374443606955,
+        0.1768420358692671
+      ],
+      "near_final": [
+        0.15931898961820984,
+        0.03229879054437057,
+        0.15801810366550925
+      ],
+      "dxy_fn": 0.0040910378725897735,
+      "seed": 20000
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.1827487447970622,
+        0.026375290663499622,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.18082380765238495,
+        0.0016598326790321551,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.02479030549212605,
+      "seed": 20008
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.18008961066990048,
+        0.06466022762323625,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.16710665521266943,
+        0.04146113808286042,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.02658486200654088,
+      "seed": 20016
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.13450490719866623,
+        0.03259425570719282,
+        0.17687253841789538
+      ],
+      "near_final": [
+        0.13121971950416306,
+        0.03097564627927201,
+        0.15801637032529553
+      ],
+      "dxy_fn": 0.0036622881738428504,
+      "seed": 20024
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": false,
+      "grasp_success": false,
+      "correct_selection": false,
+      "place_on_top": false,
+      "label": "missed_grasp",
+      "far_final": [
+        0.14874309302863697,
+        -0.05444301018995534,
+        0.15406758448381322
+      ],
+      "near_final": [
+        0.14911964676267683,
+        0.0437305344802794,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.09817426682096075,
+      "seed": 20032
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.17167444002085125,
+        0.03279249342637583,
+        0.15876277849999987
+      ],
+      "near_final": [
+        0.187870663186346,
+        -0.007456644761852394,
+        0.1587627784999999
+      ],
+      "dxy_fn": 0.04338560555900539,
+      "seed": 20040
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": false,
+      "correct_selection": false,
+      "place_on_top": false,
+      "label": "missed_grasp",
+      "far_final": [
+        0.1615215900894275,
+        -0.03207295524173992,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.1609267302947651,
+        0.024674589100185607,
+        0.15876277849999992
+      ],
+      "dxy_fn": 0.056750662084367874,
+      "seed": 20048
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.15111454659471452,
+        0.00962923597642022,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.15305987374405136,
+        -0.0118771106194942,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.021594148318967034,
+      "seed": 20056
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.15402240780085028,
+        0.005700176866520325,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.14894254197317103,
+        -0.03125115398549047,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.03729887248378948,
+      "seed": 20064
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": false,
+      "grasp_success": false,
+      "correct_selection": false,
+      "place_on_top": false,
+      "label": "missed_grasp",
+      "far_final": [
+        0.17579892614320777,
+        -0.01682616289990789,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.1484658217372919,
+        0.03595246318504437,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.059436369067094784,
+      "seed": 20072
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": false,
+      "correct_selection": false,
+      "place_on_top": false,
+      "label": "missed_grasp",
+      "far_final": [
+        0.1491930549615474,
+        -0.0865747668305594,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.1806484015672649,
+        -0.022229547377951187,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.07162224582132379,
+      "seed": 20080
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.1694252740308086,
+        0.026694354862138274,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.13352190309046064,
+        0.028753135612958513,
+        0.1587627784999999
+      ],
+      "dxy_fn": 0.035962350076992604,
+      "seed": 20088
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.16134850668237447,
+        0.04402444545104996,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.15298209233913632,
+        0.02355372575387336,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.02211441280891525,
+      "seed": 20096
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.14232566455772608,
+        0.024137536567841587,
+        0.1761947744601363
+      ],
+      "near_final": [
+        0.13447544501441017,
+        0.019198586851059973,
+        0.15796916429087163
+      ],
+      "dxy_fn": 0.00927465207881979,
+      "seed": 20001
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": false,
+      "correct_selection": false,
+      "place_on_top": false,
+      "label": "missed_grasp",
+      "far_final": [
+        0.15184659372081882,
+        0.03841777466965931,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.16288579015606963,
+        -0.025375477894013638,
+        0.1587627784999999
+      ],
+      "dxy_fn": 0.06474135409912754,
+      "seed": 20009
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.1882066991848827,
+        0.013938243185715267,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.1554390008120525,
+        0.0036942700835693038,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.03433163324938487,
+      "seed": 20017
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.14331414982891727,
+        0.010054452440608121,
+        0.17607586313290935
+      ],
+      "near_final": [
+        0.145601653511641,
+        0.0003917535179729304,
+        0.15796100133309804
+      ],
+      "dxy_fn": 0.009929774598044507,
+      "seed": 20025
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.17200045698150307,
+        -0.019953317375364092,
+        0.15876277849999987
+      ],
+      "near_final": [
+        0.18020414355999145,
+        0.019494553795165116,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.040291872795450205,
+      "seed": 20033
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.18949143025899567,
+        0.04847403065899559,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.17944078401195115,
+        0.027823933167866757,
+        0.1587627784999999
+      ],
+      "dxy_fn": 0.022966105816536582,
+      "seed": 20041
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.14120067320366134,
+        -0.0017974051319402944,
+        0.1761362714267992
+      ],
+      "near_final": [
+        0.1365126989838598,
+        -0.010177952256891054,
+        0.15796613434099296
+      ],
+      "dxy_fn": 0.009602638824773345,
+      "seed": 20049
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": false,
+      "correct_selection": false,
+      "place_on_top": false,
+      "label": "missed_grasp",
+      "far_final": [
+        0.1396225380672149,
+        -0.08941254362899326,
+        0.15876277849999998
+      ],
+      "near_final": [
+        0.16288717818267068,
+        -0.00895942529130321,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.08374931480292859,
+      "seed": 20057
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.17386514945902928,
+        0.03134248471226623,
+        0.17655002090154792
+      ],
+      "near_final": [
+        0.16887570163901502,
+        0.026669365875613544,
+        0.158004655857744
+      ],
+      "dxy_fn": 0.006836126769605958,
+      "seed": 20065
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.15837270517769433,
+        0.04098718616184407,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.1383936443214701,
+        0.02586016188813499,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.025059723383830373,
+      "seed": 20073
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": false,
+      "grasp_success": false,
+      "correct_selection": false,
+      "place_on_top": false,
+      "label": "missed_grasp",
+      "far_final": [
+        0.1781714748009713,
+        0.023517691429049727,
+        0.15876277850000015
+      ],
+      "near_final": [
+        0.15563771484994096,
+        -0.028653818560355246,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.05682989347258397,
+      "seed": 20081
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.1825837925338671,
+        0.04357612382468276,
+        0.1620590818428075
+      ],
+      "near_final": [
+        0.17060189364106934,
+        0.02860416782807621,
+        0.15872365251502868
+      ],
+      "dxy_fn": 0.019176166651381377,
+      "seed": 20089
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": false,
+      "correct_selection": false,
+      "place_on_top": false,
+      "label": "missed_grasp",
+      "far_final": [
+        0.1837608455752391,
+        -0.08863997663705377,
+        0.1587627785000001
+      ],
+      "near_final": [
+        0.14070317582313924,
+        0.005247771517901054,
+        0.1587627784999999
+      ],
+      "dxy_fn": 0.10329023273325082,
+      "seed": 20097
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.16198682045272897,
+        0.013804618502765159,
+        0.17617300786493426
+      ],
+      "near_final": [
+        0.15682399752599085,
+        0.005977805187791985,
+        0.15796855904906018
+      ],
+      "dxy_fn": 0.00937623310505312,
+      "seed": 20002
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.137252407649784,
+        0.018949114418885703,
+        0.17651088684755384
+      ],
+      "near_final": [
+        0.13114544701028016,
+        0.015256026011438559,
+        0.15800276383553008
+      ],
+      "dxy_fn": 0.0071367969172220075,
+      "seed": 20010
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": false,
+      "correct_selection": false,
+      "place_on_top": false,
+      "label": "missed_grasp",
+      "far_final": [
+        0.16559251678790507,
+        0.042516753255178466,
+        0.15842249565741523
+      ],
+      "near_final": [
+        0.15162577407206987,
+        -0.026754780907247498,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.07066551738511848,
+      "seed": 20018
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": false,
+      "correct_selection": false,
+      "place_on_top": false,
+      "label": "missed_grasp",
+      "far_final": [
+        0.19684536007053755,
+        -0.05629376075826655,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.14809373866386633,
+        -0.008354292496856472,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.06837333695941823,
+      "seed": 20026
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.20456295105726582,
+        -0.0623767878868132,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.1300184394313799,
+        -0.024644234921701418,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.0835501631764224,
+      "seed": 20034
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": false,
+      "grasp_success": false,
+      "correct_selection": false,
+      "place_on_top": false,
+      "label": "missed_grasp",
+      "far_final": [
+        0.16049045257345732,
+        -0.04947083198655569,
+        0.15900127807996287
+      ],
+      "near_final": [
+        0.13606460169196566,
+        0.010366965239834769,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.06463113930754655,
+      "seed": 20042
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.17141287421573065,
+        0.00846329025569174,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.1343238727510505,
+        0.014271036288019456,
+        0.1587627784999999
+      ],
+      "dxy_fn": 0.03754096354148444,
+      "seed": 20050
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.15497406991507276,
+        0.024088199873536435,
+        0.17690220082552785
+      ],
+      "near_final": [
+        0.1556259853773129,
+        0.021016097141041037,
+        0.15802116851919332
+      ],
+      "dxy_fn": 0.003140510940740927,
+      "seed": 20058
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.1767528573248937,
+        0.038776010424903515,
+        0.15876277849999987
+      ],
+      "near_final": [
+        0.1763548307503471,
+        0.01609337175444063,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.02268613061341276,
+      "seed": 20066
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": false,
+      "correct_selection": false,
+      "place_on_top": false,
+      "label": "missed_grasp",
+      "far_final": [
+        0.16186996512974916,
+        0.0340681054074909,
+        0.15876277849999987
+      ],
+      "near_final": [
+        0.13574430532400236,
+        -0.027590363395311193,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.0669650421891283,
+      "seed": 20074
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.2091769543816054,
+        -0.013090270192630388,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.17051912013532153,
+        -0.024326041893003015,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.04025755474834573,
+      "seed": 20082
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": false,
+      "correct_selection": false,
+      "place_on_top": false,
+      "label": "missed_grasp",
+      "far_final": [
+        0.1929162868772467,
+        -0.07260343547662462,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.13291179195844047,
+        -0.02518815822135001,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.07647710721291442,
+      "seed": 20090
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.18082369969694206,
+        0.027319721072231646,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.14277380946515755,
+        0.028933757792451536,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.038084107724680495,
+      "seed": 20098
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": false,
+      "correct_selection": false,
+      "place_on_top": false,
+      "label": "missed_grasp",
+      "far_final": [
+        0.14587816016327912,
+        0.04777898455222899,
+        0.1587627785000001
+      ],
+      "near_final": [
+        0.1491151730600363,
+        -0.03129561759123102,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.07914082989607996,
+      "seed": 20003
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": false,
+      "correct_selection": false,
+      "place_on_top": false,
+      "label": "missed_grasp",
+      "far_final": [
+        0.18267422357205945,
+        0.03871613217222756,
+        0.15876277849999992
+      ],
+      "near_final": [
+        0.13486488689472773,
+        -0.0486896626069312,
+        0.1587627784999999
+      ],
+      "dxy_fn": 0.09962683190036142,
+      "seed": 20011
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": false,
+      "grasp_success": false,
+      "correct_selection": false,
+      "place_on_top": false,
+      "label": "missed_grasp",
+      "far_final": [
+        0.13592565181968472,
+        -0.03594381851071773,
+        0.15876277849999987
+      ],
+      "near_final": [
+        0.16982104133905415,
+        0.025674837451541546,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.07032607050920056,
+      "seed": 20019
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": false,
+      "correct_selection": false,
+      "place_on_top": false,
+      "label": "missed_grasp",
+      "far_final": [
+        0.17885951565781813,
+        -0.07799987504324511,
+        0.15241163517086917
+      ],
+      "near_final": [
+        0.15526863690918571,
+        -0.01819307517710521,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.06429139032841946,
+      "seed": 20027
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": false,
+      "grasp_success": false,
+      "correct_selection": false,
+      "place_on_top": false,
+      "label": "missed_grasp",
+      "far_final": [
+        0.1650967091968879,
+        -0.04985765578167588,
+        0.1587627785000001
+      ],
+      "near_final": [
+        0.14656165782351818,
+        0.01480426289983515,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.06726597845112936,
+      "seed": 20035
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": false,
+      "correct_selection": false,
+      "place_on_top": false,
+      "label": "missed_grasp",
+      "far_final": [
+        0.17759673014485072,
+        0.03227239879265596,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.1617254975044977,
+        -0.02911851197246191,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.063409304917298,
+      "seed": 20043
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.18296340853914947,
+        0.022323246543141852,
+        0.17636875895524073
+      ],
+      "near_final": [
+        0.18169548152585477,
+        0.014246424262359593,
+        0.15799558418797227
+      ],
+      "dxy_fn": 0.00817573831934359,
+      "seed": 20051
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.1338595252689638,
+        0.030576335496663148,
+        0.17677217067253279
+      ],
+      "near_final": [
+        0.13205711993561034,
+        0.026142265071533242,
+        0.1580153437491335
+      ],
+      "dxy_fn": 0.004786402147825933,
+      "seed": 20059
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.1504335037865758,
+        0.020806781486366624,
+        0.17690266415923664
+      ],
+      "near_final": [
+        0.1509427508646981,
+        0.017616866873083167,
+        0.1580209141309354
+      ],
+      "dxy_fn": 0.003230307698442279,
+      "seed": 20067
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.1731995675207426,
+        0.012609856894077379,
+        0.15876277849999987
+      ],
+      "near_final": [
+        0.15945057650160016,
+        -0.025498948928019335,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.040513156322739545,
+      "seed": 20075
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.189010239914903,
+        0.011573478908788811,
+        0.17605070240060333
+      ],
+      "near_final": [
+        0.1849209268265628,
+        0.002455993413303561,
+        0.15797221266934255
+      ],
+      "dxy_fn": 0.009992548388416962,
+      "seed": 20083
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.16659539379003424,
+        0.04522528135602439,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.1733650997886522,
+        0.020508582585708066,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.02562701928454186,
+      "seed": 20091
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.1463253088980768,
+        0.03544244531649983,
+        0.1767710087455376
+      ],
+      "near_final": [
+        0.15123163568116524,
+        0.03485674531920291,
+        0.15801467284497522
+      ],
+      "dxy_fn": 0.004941162513952016,
+      "seed": 20099
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.19760521536042325,
+        -0.007633089099869658,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.16591806644472354,
+        -0.0016627441088793646,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.032244696086599606,
+      "seed": 20004
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.1350565498415719,
+        -0.03105093295316419,
+        0.17621880462659492
+      ],
+      "near_final": [
+        0.13195804348212525,
+        -0.03959000729973567,
+        0.15798421659405376
+      ],
+      "dxy_fn": 0.009083861092938753,
+      "seed": 20012
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": false,
+      "correct_selection": false,
+      "place_on_top": false,
+      "label": "missed_grasp",
+      "far_final": [
+        0.1967646881614698,
+        -0.06619704589515445,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.15045084372812445,
+        -0.012833721396534353,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.07065845022176145,
+      "seed": 20020
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.13359184513827313,
+        0.008337516054159527,
+        0.17622113904645795
+      ],
+      "near_final": [
+        0.13943328926851345,
+        0.0013697133866911986,
+        0.1579728529050918
+      ],
+      "dxy_fn": 0.009092455308633517,
+      "seed": 20028
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.1840915112054339,
+        0.008227623460108302,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.17016978638502334,
+        0.040401158115750374,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.03505639391342237,
+      "seed": 20036
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.19316152745953374,
+        0.0018881076281174745,
+        0.15876277849999987
+      ],
+      "near_final": [
+        0.18275162438021622,
+        0.023860343342040922,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.02431347824538886,
+      "seed": 20044
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.17970218960356332,
+        0.03161666659808162,
+        0.17630764886460282
+      ],
+      "near_final": [
+        0.1762192668806919,
+        0.023784093498749895,
+        0.15798491929554126
+      ],
+      "dxy_fn": 0.008572044799805303,
+      "seed": 20052
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": false,
+      "grasp_success": false,
+      "correct_selection": false,
+      "place_on_top": false,
+      "label": "missed_grasp",
+      "far_final": [
+        0.17119021269813312,
+        0.0483369541171094,
+        0.15876277849999984
+      ],
+      "near_final": [
+        0.1461959654204005,
+        -0.03720627236466506,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.0891198967340773,
+      "seed": 20060
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": false,
+      "grasp_success": false,
+      "correct_selection": false,
+      "place_on_top": false,
+      "label": "missed_grasp",
+      "far_final": [
+        0.15308524305614885,
+        -0.060717008191721863,
+        0.15876277849999987
+      ],
+      "near_final": [
+        0.13160889832852304,
+        0.013418193419535082,
+        0.1587627784999999
+      ],
+      "dxy_fn": 0.07718329806895748,
+      "seed": 20068
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.18512505567560805,
+        0.012273041530401938,
+        0.1764606213075921
+      ],
+      "near_final": [
+        0.17776827791122923,
+        0.010796630390332976,
+        0.15799984576961218
+      ],
+      "dxy_fn": 0.007503463795406649,
+      "seed": 20076
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.19723375875098972,
+        0.016229197505916157,
+        0.1460847936523445
+      ],
+      "near_final": [
+        0.1587159999007483,
+        0.0035582867672977318,
+        0.1587627784999999
+      ],
+      "dxy_fn": 0.04054836280038181,
+      "seed": 20084
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.16803643702684512,
+        0.03353565563112574,
+        0.17665886630306663
+      ],
+      "near_final": [
+        0.1642058216579147,
+        0.03820514283875028,
+        0.1580092688277892
+      ],
+      "dxy_fn": 0.006039679203968967,
+      "seed": 20092
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.19041996499543043,
+        0.014909694667985902,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.1555544658605722,
+        0.04450850075977254,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.04573502325332289,
+      "seed": 20005
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.1935167395622139,
+        0.03844995713222338,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.17429338398028402,
+        0.01855756116885335,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.027663058706383414,
+      "seed": 20013
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": false,
+      "correct_selection": false,
+      "place_on_top": false,
+      "label": "missed_grasp",
+      "far_final": [
+        0.18057112985803125,
+        0.02969063857824201,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.14168087810414573,
+        -0.04529128703162728,
+        0.1523601471313493
+      ],
+      "dxy_fn": 0.08446739518680901,
+      "seed": 20021
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.13618495288742943,
+        -0.0045567839250290065,
+        0.17685007063770153
+      ],
+      "near_final": [
+        0.13988389087820768,
+        -0.005469611635050658,
+        0.15801909326839345
+      ],
+      "dxy_fn": 0.0038099077006938124,
+      "seed": 20029
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": false,
+      "grasp_success": false,
+      "correct_selection": false,
+      "place_on_top": false,
+      "label": "missed_grasp",
+      "far_final": [
+        0.18830478305343257,
+        -0.045034330294902905,
+        0.15876277849999992
+      ],
+      "near_final": [
+        0.1774148801433122,
+        0.0407582567816548,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.08648096890461268,
+      "seed": 20037
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.14518283187857664,
+        0.01455287076347285,
+        0.176637577143411
+      ],
+      "near_final": [
+        0.1438718474093921,
+        0.008522031087721904,
+        0.15800854400948122
+      ],
+      "dxy_fn": 0.006171685950617938,
+      "seed": 20045
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.17782422523910035,
+        0.017035703062665015,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.1634031364325757,
+        0.00014941861954458145,
+        0.1587627784999999
+      ],
+      "dxy_fn": 0.02220617942509791,
+      "seed": 20053
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": false,
+      "correct_selection": false,
+      "place_on_top": false,
+      "label": "missed_grasp",
+      "far_final": [
+        0.16852881809730355,
+        -0.04965680469716842,
+        0.1459484388970607
+      ],
+      "near_final": [
+        0.15968062904238906,
+        0.01384944966548679,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.06411969114652513,
+      "seed": 20061
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.14811998683042527,
+        0.014049607232572035,
+        0.17696249699506003
+      ],
+      "near_final": [
+        0.14907664171230736,
+        0.012839197883057001,
+        0.15802449879034416
+      ],
+      "dxy_fn": 0.0015428153993340408,
+      "seed": 20069
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": false,
+      "grasp_success": false,
+      "correct_selection": false,
+      "place_on_top": false,
+      "label": "missed_grasp",
+      "far_final": [
+        0.15674480762455092,
+        0.044580966802439295,
+        0.15876277849999978
+      ],
+      "near_final": [
+        0.15860570823765213,
+        -0.025128270498358113,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.06973407141527536,
+      "seed": 20077
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.15546777596476397,
+        0.031137166223477012,
+        0.17681128472314175
+      ],
+      "near_final": [
+        0.15518896783037048,
+        0.026711301135529927,
+        0.15801679548071412
+      ],
+      "dxy_fn": 0.004434638176053694,
+      "seed": 20085
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.153492019690696,
+        0.0240592683727171,
+        0.17694073850064188
+      ],
+      "near_final": [
+        0.1511150013484484,
+        0.02324538316834284,
+        0.15802274983506995
+      ],
+      "dxy_fn": 0.002512493845819499,
+      "seed": 20093
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.13863615941103255,
+        0.018442040201273015,
+        0.17680428054145997
+      ],
+      "near_final": [
+        0.14156597080380778,
+        0.01491509728900448,
+        0.15801618971873627
+      ],
+      "dxy_fn": 0.004585097720184032,
+      "seed": 20006
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.17669478329731594,
+        -0.012581124245778454,
+        0.15876277849999992
+      ],
+      "near_final": [
+        0.1429694589785128,
+        0.054922837447154434,
+        0.15876277850000012
+      ],
+      "dxy_fn": 0.0754598061530071,
+      "seed": 20014
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.1542093417349749,
+        0.01719941288580104,
+        0.17694040073793735
+      ],
+      "near_final": [
+        0.15540567962049875,
+        0.014979423529016463,
+        0.1580227289497818
+      ],
+      "dxy_fn": 0.0025218201919598717,
+      "seed": 20022
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.1508325218139338,
+        -0.01428018743961391,
+        0.17696964185844863
+      ],
+      "near_final": [
+        0.1499131612989181,
+        -0.012734971240995973,
+        0.15802411995053675
+      ],
+      "dxy_fn": 0.00179803138377538,
+      "seed": 20030
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.1580277782415392,
+        -0.00351575874356467,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.17570729335900068,
+        0.010771151929440182,
+        0.1587627784999999
+      ],
+      "dxy_fn": 0.022730619687262563,
+      "seed": 20038
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.1959789829848848,
+        0.028504222620792687,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.18035499505572236,
+        0.013759769822574338,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.02148273462875485,
+      "seed": 20046
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.1851689142441793,
+        0.01504928418688601,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.1645380402542792,
+        0.03222747231525942,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.026846286688496153,
+      "seed": 20054
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.18358137440809502,
+        0.038966866526387464,
+        0.17667618561623147
+      ],
+      "near_final": [
+        0.18071835866338146,
+        0.033861219008279736,
+        0.15801026070720806
+      ],
+      "dxy_fn": 0.005853588278452575,
+      "seed": 20062
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": false,
+      "grasp_success": false,
+      "correct_selection": false,
+      "place_on_top": false,
+      "label": "missed_grasp",
+      "far_final": [
+        0.18150216740472003,
+        0.030810912315177175,
+        0.15936553197695585
+      ],
+      "near_final": [
+        0.13276579296481003,
+        -0.033159665725923576,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.08042057602665921,
+      "seed": 20070
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.18025718672674212,
+        0.04932682675511945,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.18332453070607913,
+        0.027534878578261028,
+        0.1587627784999999
+      ],
+      "dxy_fn": 0.02200676269764497,
+      "seed": 20078
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.15769724607319888,
+        0.0028502981527274724,
+        0.17633996550806652
+      ],
+      "near_final": [
+        0.15781874693955417,
+        0.011208942091940937,
+        0.1579942079706366
+      ],
+      "dxy_fn": 0.00835952695809249,
+      "seed": 20086
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.1819447998966612,
+        0.05188027684913645,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.17310579774301382,
+        0.03270889197385539,
+        0.1587627784999999
+      ],
+      "dxy_fn": 0.02111089664387419,
+      "seed": 20094
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.17049323019437457,
+        0.0186640188948759,
+        0.17685313109157882
+      ],
+      "near_final": [
+        0.16768427355109508,
+        0.021362110878105238,
+        0.15801880229476178
+      ],
+      "dxy_fn": 0.0038948604305918825,
+      "seed": 20007
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": false,
+      "correct_selection": false,
+      "place_on_top": false,
+      "label": "missed_grasp",
+      "far_final": [
+        0.13273457536515862,
+        -0.04188957975610709,
+        0.15876277849999987
+      ],
+      "near_final": [
+        0.16334975920715541,
+        0.022699413730518772,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.07147746191139316,
+      "seed": 20015
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.1929488392461751,
+        0.03002967879123631,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.17350297175175775,
+        0.01915185036683512,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.022281582390870438,
+      "seed": 20023
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.1718672486391421,
+        0.02459669649837906,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.17264086044664204,
+        0.003836880070913812,
+        0.1587627784999999
+      ],
+      "dxy_fn": 0.020774225697502167,
+      "seed": 20031
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.18490804189939197,
+        -0.02186883192594777,
+        0.17625048592814058
+      ],
+      "near_final": [
+        0.1774520354997866,
+        -0.017051879678559742,
+        0.15798922028135337
+      ],
+      "dxy_fn": 0.008876658176621016,
+      "seed": 20039
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.18082578242933425,
+        0.04667507262285371,
+        0.15876277849999987
+      ],
+      "near_final": [
+        0.1658680467084334,
+        0.03215657619682712,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.020845157623986935,
+      "seed": 20047
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.16636934334997136,
+        0.04266577006148267,
+        0.16228731877084757
+      ],
+      "near_final": [
+        0.15943591061823187,
+        0.024268453331000917,
+        0.1585611898493084
+      ],
+      "dxy_fn": 0.01966046165091808,
+      "seed": 20055
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.18145677676052765,
+        -0.004144914218310558,
+        0.17650891856425463
+      ],
+      "near_final": [
+        0.1775789632738084,
+        -0.010223993251231873,
+        0.15800229034871072
+      ],
+      "dxy_fn": 0.007210592161971533,
+      "seed": 20063
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.1611243248304289,
+        -0.023963905716195735,
+        0.1579238854302161
+      ],
+      "near_final": [
+        0.14358538997843193,
+        -0.0461398815955885,
+        0.15462629381886034
+      ],
+      "dxy_fn": 0.028273452954069904,
+      "seed": 20071
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.18617236624712877,
+        -0.012893361690168924,
+        0.1617861810848986
+      ],
+      "near_final": [
+        0.15130382993659933,
+        -0.03435936082761165,
+        0.15842093072206642
+      ],
+      "dxy_fn": 0.04094635445808823,
+      "seed": 20079
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.16989453516892308,
+        0.024722167022132622,
+        0.1767971535642828
+      ],
+      "near_final": [
+        0.1727311961523874,
+        0.02111991165204326,
+        0.15801618864867076
+      ],
+      "dxy_fn": 0.004585072440697797,
+      "seed": 20087
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.18130018420211347,
+        -0.010602804062015414,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.15906233290721214,
+        0.04175030664927808,
+        0.1587627784999999
+      ],
+      "dxy_fn": 0.056880314972432226,
+      "seed": 20095
+    }
+  ],
+  "solver_rows": []
+}

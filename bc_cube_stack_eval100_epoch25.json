@@ -1,0 +1,2124 @@
+{
+  "policy": "bc_cube_stack_epoch25.pt",
+  "episodes": 100,
+  "start_seed": 20000,
+  "ensemble_decay": 0.01,
+  "max_steps": 170,
+  "rate": 50,
+  "elapsed_s": 787.9323968919925,
+  "policy_summary": {
+    "n": 100,
+    "overall_success": 91,
+    "correct_selection": 99,
+    "grasp_success": 99,
+    "place_on_top": 91,
+    "wrong_cube_picked": 1,
+    "missed_grasp": 0,
+    "placement_miss": 8,
+    "knocked_over_unstable": 0
+  },
+  "solver_summary": null,
+  "policy_rows": [
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.16126569992625595,
+        0.03486678618574443,
+        0.1769041783356338
+      ],
+      "near_final": [
+        0.15915676135148388,
+        0.03245816496025475,
+        0.15802099692150456
+      ],
+      "dxy_fn": 0.003201418142017856,
+      "seed": 20000
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.18185458455495554,
+        0.0038844881704474562,
+        0.1769389636850391
+      ],
+      "near_final": [
+        0.18090922943951945,
+        0.0018769004766171372,
+        0.15802336712329307
+      ],
+      "dxy_fn": 0.0022190323663029603,
+      "seed": 20008
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.17050842702526742,
+        0.042846994214888225,
+        0.17685873347576625
+      ],
+      "near_final": [
+        0.16724237445961157,
+        0.041138797541808,
+        0.1580195083321614
+      ],
+      "dxy_fn": 0.003685788278719966,
+      "seed": 20016
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.13270740094754924,
+        0.03183380895217973,
+        0.17696441949889036
+      ],
+      "near_final": [
+        0.13109572355656426,
+        0.030745356071525953,
+        0.15802387574642407
+      ],
+      "dxy_fn": 0.0019447965667430695,
+      "seed": 20024
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.15064107066543048,
+        0.04425998566629019,
+        0.17697304097256372
+      ],
+      "near_final": [
+        0.14924134975354217,
+        0.043766036961885225,
+        0.15802457768029116
+      ],
+      "dxy_fn": 0.0014843193570659857,
+      "seed": 20032
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.18213777160429087,
+        -0.02319766693267183,
+        0.17681433763496937
+      ],
+      "near_final": [
+        0.17773003167224244,
+        -0.02249251632187794,
+        0.15801668011632147
+      ],
+      "dxy_fn": 0.0044637886030229204,
+      "seed": 20040
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.15660710611256085,
+        0.02955467490397056,
+        0.17692179529003246
+      ],
+      "near_final": [
+        0.1543118304658167,
+        0.027790536316430466,
+        0.1580218292921701
+      ],
+      "dxy_fn": 0.0028949050503573877,
+      "seed": 20048
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.15504282418716833,
+        -0.009247214991854005,
+        0.17691223921834007
+      ],
+      "near_final": [
+        0.1532076537732371,
+        -0.011688836393495716,
+        0.15802140663050396
+      ],
+      "dxy_fn": 0.0030544010079102775,
+      "seed": 20056
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.14959227143486414,
+        -0.02868197686845777,
+        0.17693691396726646
+      ],
+      "near_final": [
+        0.14900047128759983,
+        -0.031049929475415978,
+        0.15802290756276652
+      ],
+      "dxy_fn": 0.0024407840877681587,
+      "seed": 20064
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.1512211539118471,
+        0.038008589500987566,
+        0.1768372652217786
+      ],
+      "near_final": [
+        0.1478927146568494,
+        0.035812883542289106,
+        0.1580184755584955
+      ],
+      "dxy_fn": 0.003987434329399496,
+      "seed": 20072
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.17884947084120473,
+        0.019092120670979353,
+        0.17693695340468224
+      ],
+      "near_final": [
+        0.1765922221649275,
+        0.01813269869358481,
+        0.15802288165629189
+      ],
+      "dxy_fn": 0.002452684675465419,
+      "seed": 20080
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.13453152342066202,
+        0.017662406437200334,
+        0.17669696001728133
+      ],
+      "near_final": [
+        0.1308652198067348,
+        0.013407960162823512,
+        0.15801148110223578
+      ],
+      "dxy_fn": 0.005616234974700991,
+      "seed": 20088
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.15963490558524007,
+        0.026694991829739587,
+        0.1765537337676087
+      ],
+      "near_final": [
+        0.15339897374332545,
+        0.023835766628280654,
+        0.1580045109732255
+      ],
+      "dxy_fn": 0.006860175995531205,
+      "seed": 20096
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.13526954517385184,
+        0.01565784282566044,
+        0.17692721525098704
+      ],
+      "near_final": [
+        0.1339190370257478,
+        0.01810331991374002,
+        0.15802208587963362
+      ],
+      "dxy_fn": 0.0027936052774895663,
+      "seed": 20001
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.150575514448174,
+        -0.02937390384898218,
+        0.17674361037705977
+      ],
+      "near_final": [
+        0.1493426127454341,
+        -0.03431882938105345,
+        0.15801397355235397
+      ],
+      "dxy_fn": 0.005096306027540857,
+      "seed": 20009
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.1622657471289265,
+        0.007297353988968758,
+        0.17652101220821323
+      ],
+      "near_final": [
+        0.15597004828227534,
+        0.003991347834164542,
+        0.15800293341862073
+      ],
+      "dxy_fn": 0.007110942318942549,
+      "seed": 20017
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.1475848430778442,
+        0.0015593612662706834,
+        0.17694294965884944
+      ],
+      "near_final": [
+        0.14592738883233042,
+        -0.00026687981446194497,
+        0.15802285236892374
+      ],
+      "dxy_fn": 0.0024662341861484134,
+      "seed": 20025
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.1908280572033262,
+        0.009543205171712673,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.17474537540444224,
+        0.03203581015337384,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.027650857720967766,
+      "seed": 20033
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.18063078518619258,
+        0.029394088384702886,
+        0.17696876168071454
+      ],
+      "near_final": [
+        0.17953374356267857,
+        0.02794010323940671,
+        0.15802408229735623
+      ],
+      "dxy_fn": 0.0018214206341381441,
+      "seed": 20041
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.14363387034810554,
+        -0.009310647831337403,
+        0.17652507022864447
+      ],
+      "near_final": [
+        0.1367190094285205,
+        -0.010731259814055084,
+        0.15800326151030702
+      ],
+      "dxy_fn": 0.007059280412524038,
+      "seed": 20049
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.165720891683209,
+        -0.014550147156068127,
+        0.1766815152826056
+      ],
+      "near_final": [
+        0.16311163469268825,
+        -0.009383665341336908,
+        0.15801060307261672
+      ],
+      "dxy_fn": 0.005787983792697575,
+      "seed": 20057
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.17379251617594862,
+        0.02150150904131654,
+        0.17657716377632346
+      ],
+      "near_final": [
+        0.168852801470959,
+        0.025910302355645544,
+        0.15800595810576307
+      ],
+      "dxy_fn": 0.006621045223766634,
+      "seed": 20065
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.14312106619501694,
+        0.030945678721765065,
+        0.1766091706682767
+      ],
+      "near_final": [
+        0.13876166589933578,
+        0.026277952226172848,
+        0.1580073291155146
+      ],
+      "dxy_fn": 0.006386864768854792,
+      "seed": 20073
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.15774623188159212,
+        -0.021441892771965634,
+        0.17655134954400925
+      ],
+      "near_final": [
+        0.15577717638161495,
+        -0.028005696796143065,
+        0.15800455505980449
+      ],
+      "dxy_fn": 0.006852787960370448,
+      "seed": 20081
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.1748662658890093,
+        0.02219483845224089,
+        0.176519356893213
+      ],
+      "near_final": [
+        0.17084791803930377,
+        0.028085931751731154,
+        0.15800280426698912
+      ],
+      "dxy_fn": 0.007131065818272343,
+      "seed": 20089
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.156461638994496,
+        0.024768945604236106,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.14072842426988305,
+        0.005231267487728842,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.025084953891825763,
+      "seed": 20097
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.15921861988712172,
+        0.00851622782681902,
+        0.17685609174176317
+      ],
+      "near_final": [
+        0.15663101704773744,
+        0.00555809863668846,
+        0.15801867984026893
+      ],
+      "dxy_fn": 0.003930167523133342,
+      "seed": 20002
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.13737003261840663,
+        0.022993653981420666,
+        0.17613832403354243
+      ],
+      "near_final": [
+        0.13142659278096852,
+        0.015476193457025349,
+        0.15796516367678523
+      ],
+      "dxy_fn": 0.009583146134599447,
+      "seed": 20010
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.15306628400886646,
+        -0.022565442487356036,
+        0.17684894479578922
+      ],
+      "near_final": [
+        0.15171599978928457,
+        -0.026360598239844473,
+        0.15801833168556786
+      ],
+      "dxy_fn": 0.004028209857901888,
+      "seed": 20018
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.16833250740980926,
+        0.0026108774461514462,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.14809403410506655,
+        -0.008309576963231783,
+        0.1587627784999999
+      ],
+      "dxy_fn": 0.02299678512779995,
+      "seed": 20026
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.1370270713031317,
+        -0.021736903418596867,
+        0.176511103717174
+      ],
+      "near_final": [
+        0.1304200517999902,
+        -0.024427385714627242,
+        0.15800278295796383
+      ],
+      "dxy_fn": 0.0071338209747753645,
+      "seed": 20034
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.13410355472759894,
+        0.015047964810250013,
+        0.17679058439071943
+      ],
+      "near_final": [
+        0.13575239588157026,
+        0.01069539774036158,
+        0.15801590237219434
+      ],
+      "dxy_fn": 0.00465440836722635,
+      "seed": 20042
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.13957462301261456,
+        0.01624302861262173,
+        0.17670836799631193
+      ],
+      "near_final": [
+        0.13439954560789205,
+        0.014288468235959974,
+        0.1580119024913056
+      ],
+      "dxy_fn": 0.00553188326077888,
+      "seed": 20050
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.15883454754913306,
+        0.023015529809133614,
+        0.17686557531333666
+      ],
+      "near_final": [
+        0.1559291424962511,
+        0.02091680915343702,
+        0.15801983794534216
+      ],
+      "dxy_fn": 0.0035841326582535496,
+      "seed": 20058
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.18148319237954977,
+        0.015320783535513905,
+        0.17678282535230336
+      ],
+      "near_final": [
+        0.17675774689829002,
+        0.015995293676316143,
+        0.15801540128075878
+      ],
+      "dxy_fn": 0.004773342531853673,
+      "seed": 20066
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.13182032414749537,
+        -0.023696401889553752,
+        0.17675465647147084
+      ],
+      "near_final": [
+        0.13538386103074732,
+        -0.027305343119724875,
+        0.15801408751450902
+      ],
+      "dxy_fn": 0.005071809531234989,
+      "seed": 20074
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.18219479763151233,
+        -0.005610076127168612,
+        0.17619826382535925
+      ],
+      "near_final": [
+        0.17311640604105114,
+        -0.0038268279072857588,
+        0.1579720228251029
+      ],
+      "dxy_fn": 0.009251873760675293,
+      "seed": 20082
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.13829910968505113,
+        -0.022987716890567392,
+        0.17672718582509309
+      ],
+      "near_final": [
+        0.13334221972771848,
+        -0.025005704444941063,
+        0.15801277985179743
+      ],
+      "dxy_fn": 0.0053519185175703405,
+      "seed": 20090
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.15136053974032737,
+        0.029911621503420745,
+        0.17640023175296116
+      ],
+      "near_final": [
+        0.14344734585100935,
+        0.028990461584446077,
+        0.15799607218876222
+      ],
+      "dxy_fn": 0.0079666287177366,
+      "seed": 20098
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.1516743983120532,
+        -0.02686901021072841,
+        0.17677700711343622
+      ],
+      "near_final": [
+        0.14930247545592124,
+        -0.030962715476964456,
+        0.15801557857845883
+      ],
+      "dxy_fn": 0.00473121980489704,
+      "seed": 20003
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.12530386945234742,
+        -0.03431676696298491,
+        0.1563697287144674
+      ],
+      "near_final": [
+        0.1412697508368107,
+        -0.05515137989815699,
+        0.16052374035007616
+      ],
+      "dxy_fn": 0.026248627860160436,
+      "seed": 20011
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.16999319768813986,
+        0.020324378981557378,
+        0.17677090382166163
+      ],
+      "near_final": [
+        0.16982598755476724,
+        0.02526378711216913,
+        0.1580146681215201
+      ],
+      "dxy_fn": 0.004942237540776039,
+      "seed": 20019
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.17788934905416573,
+        -0.012094010955684362,
+        0.1587627784999999
+      ],
+      "near_final": [
+        0.15525961539687602,
+        -0.0182188164707949,
+        0.15876277849999987
+      ],
+      "dxy_fn": 0.023443934993891257,
+      "seed": 20027
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.14735363988842923,
+        0.01574048109466124,
+        0.17698763147132815
+      ],
+      "near_final": [
+        0.14663045906591235,
+        0.014878863829501572,
+        0.15802499467676553
+      ],
+      "dxy_fn": 0.0011248888005831576,
+      "seed": 20035
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.16567181630640504,
+        -0.026344754389156247,
+        0.17680082239139192
+      ],
+      "near_final": [
+        0.1620276066016169,
+        -0.02890255218955119,
+        0.15801672364778332
+      ],
+      "dxy_fn": 0.004452257175880248,
+      "seed": 20043
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.18569635264721138,
+        0.01385666409286856,
+        0.176865435779702
+      ],
+      "near_final": [
+        0.181907052275142,
+        0.013568883837880194,
+        0.15801912793538042
+      ],
+      "dxy_fn": 0.003800212465761124,
+      "seed": 20051
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.12936343237453055,
+        0.025370468418990613,
+        0.1769341033710139
+      ],
+      "near_final": [
+        0.13185103770909185,
+        0.025737529584430024,
+        0.1580227448959982
+      ],
+      "dxy_fn": 0.002514540554397875,
+      "seed": 20059
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.15379969105176922,
+        0.017389488961338035,
+        0.17693705095238957
+      ],
+      "near_final": [
+        0.15120516356396319,
+        0.017351331310107684,
+        0.1580225627214725
+      ],
+      "dxy_fn": 0.0025948080644487928,
+      "seed": 20067
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.15996467147299506,
+        -0.02442957252221544,
+        0.17698837452294586
+      ],
+      "near_final": [
+        0.15949524590838113,
+        -0.025386037162957138,
+        0.15802505254381013
+      ],
+      "dxy_fn": 0.0010654505946791966,
+      "seed": 20075
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.18862574322075248,
+        0.0009754078509294017,
+        0.17686044486400607
+      ],
+      "near_final": [
+        0.18489853555912933,
+        0.001651403097437846,
+        0.1580191684841856
+      ],
+      "dxy_fn": 0.003788013532996465,
+      "seed": 20083
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.17719901912946162,
+        0.016662227295850048,
+        0.17675173962507604
+      ],
+      "near_final": [
+        0.17366614979658299,
+        0.020215031914352144,
+        0.1580143623396571
+      ],
+      "dxy_fn": 0.005010347930078724,
+      "seed": 20091
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.15280589379370801,
+        0.036473400423577794,
+        0.176967120946143
+      ],
+      "near_final": [
+        0.15174091747720062,
+        0.03493409823631305,
+        0.15802399955629573
+      ],
+      "dxy_fn": 0.0018717974726021227,
+      "seed": 20099
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.17130519965181376,
+        0.0012657756823309255,
+        0.1766872523580291
+      ],
+      "near_final": [
+        0.1663424250616081,
+        -0.0014548165787904557,
+        0.15801125984016431
+      ],
+      "dxy_fn": 0.005659571881729621,
+      "seed": 20004
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.1359466266752929,
+        -0.03973248775744644,
+        0.1768544229265547
+      ],
+      "near_final": [
+        0.13203018935593486,
+        -0.04026947548624095,
+        0.15801859916462943
+      ],
+      "dxy_fn": 0.003953079444855141,
+      "seed": 20012
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.16944731596431645,
+        -0.005979236648474531,
+        0.16229776262997778
+      ],
+      "near_final": [
+        0.15074066605743333,
+        -0.01268838978420359,
+        0.15853260598407526
+      ],
+      "dxy_fn": 0.019873386388266925,
+      "seed": 20020
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.14254825876198005,
+        0.0012673280627739979,
+        0.17692744148735634
+      ],
+      "near_final": [
+        0.14009411008885647,
+        0.0008855241687891764,
+        0.15802281319393183
+      ],
+      "dxy_fn": 0.002483670655150592,
+      "seed": 20028
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.17318870272897413,
+        0.042441835626614084,
+        0.1768944654464995
+      ],
+      "near_final": [
+        0.1703968595234367,
+        0.040562973594256625,
+        0.15802051776602893
+      ],
+      "dxy_fn": 0.0033651910823814966,
+      "seed": 20036
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.18698827367660506,
+        0.02712086688408592,
+        0.17677018083707957
+      ],
+      "near_final": [
+        0.1830274763168572,
+        0.024151241680388784,
+        0.15801463191463297
+      ],
+      "dxy_fn": 0.004950413071191016,
+      "seed": 20044
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.1799998640157948,
+        0.020842473788215347,
+        0.17682252843862595
+      ],
+      "near_final": [
+        0.1762412833511334,
+        0.022928278140048646,
+        0.15801732626283746
+      ],
+      "dxy_fn": 0.0042985472437665736,
+      "seed": 20052
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.14698784655555142,
+        -0.03027998150133092,
+        0.17659882806757887
+      ],
+      "near_final": [
+        0.14625356548176194,
+        -0.03668204204246876,
+        0.15800699790978268
+      ],
+      "dxy_fn": 0.006444031957378828,
+      "seed": 20060
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.13504737801976008,
+        0.010840443070062815,
+        0.17685037321163077
+      ],
+      "near_final": [
+        0.13191344191759266,
+        0.013221941237707912,
+        0.15801865817662356
+      ],
+      "dxy_fn": 0.0039361261431724035,
+      "seed": 20068
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.18789243960820742,
+        0.005713086978678693,
+        0.17587101665502008
+      ],
+      "near_final": [
+        0.17793247467291676,
+        0.010285716340312993,
+        0.1579511544294419
+      ],
+      "dxy_fn": 0.01095946352661022,
+      "seed": 20076
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.1657386090787679,
+        0.007966003733780242,
+        0.17640392648380745
+      ],
+      "near_final": [
+        0.15864470462285765,
+        0.0044004796223993834,
+        0.15799549987287442
+      ],
+      "dxy_fn": 0.007939549270482639,
+      "seed": 20084
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.16910757872000912,
+        0.037551432352907484,
+        0.17676452679589735
+      ],
+      "near_final": [
+        0.16428811655182252,
+        0.038512589957223675,
+        0.15801478944176206
+      ],
+      "dxy_fn": 0.00491437071565798,
+      "seed": 20092
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.15353450856049358,
+        0.04752459337428126,
+        0.17688660051701408
+      ],
+      "near_final": [
+        0.1553882941857373,
+        0.044724317695280735,
+        0.15802053785176937
+      ],
+      "dxy_fn": 0.0033582830468502937,
+      "seed": 20005
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.1767303278750535,
+        0.015733676467864964,
+        0.1768818262180873
+      ],
+      "near_final": [
+        0.17446608005460085,
+        0.018341496631628654,
+        0.15802024828013972
+      ],
+      "dxy_fn": 0.003453627686789218,
+      "seed": 20013
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": false,
+      "correct_selection": false,
+      "place_on_top": false,
+      "label": "wrong_cube_picked",
+      "far_final": [
+        0.1724713125827562,
+        0.03518775056217283,
+        0.158025182731269
+      ],
+      "near_final": [
+        0.1716930844709681,
+        0.03470131622130147,
+        0.17699181803014116
+      ],
+      "dxy_fn": 0.0009177458046519326,
+      "seed": 20021
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.14125079324576606,
+        -0.0063074195621426535,
+        0.17698664087677057
+      ],
+      "near_final": [
+        0.14029171367354504,
+        -0.0056202109304759815,
+        0.15802493835753598
+      ],
+      "dxy_fn": 0.0011798683525244833,
+      "seed": 20029
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.18534472160635682,
+        0.04065082066807438,
+        0.17648416127963312
+      ],
+      "near_final": [
+        0.1780111905100979,
+        0.04076977291465578,
+        0.15800086612169553
+      ],
+      "dxy_fn": 0.00733449575477165,
+      "seed": 20037
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.14443386556110585,
+        0.00816372580556788,
+        0.17699160529363445
+      ],
+      "near_final": [
+        0.1435121986360638,
+        0.008039000324888076,
+        0.1580251726108548
+      ],
+      "dxy_fn": 0.0009300679363612593,
+      "seed": 20045
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.17231289599619107,
+        0.000993021438948227,
+        0.17635318385085882
+      ],
+      "near_final": [
+        0.16410418093583784,
+        0.0001998761239004178,
+        0.15798815156484083
+      ],
+      "dxy_fn": 0.008246943823796316,
+      "seed": 20053
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.16388847885596147,
+        0.013492382010316597,
+        0.17685359353249627
+      ],
+      "near_final": [
+        0.16001265094514402,
+        0.013826873186414597,
+        0.15801881838322568
+      ],
+      "dxy_fn": 0.003890234741138247,
+      "seed": 20061
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.15104463520330222,
+        0.0075241135741285405,
+        0.17674029189906193
+      ],
+      "near_final": [
+        0.14930001121880707,
+        0.012350628173943605,
+        0.15801380949067564
+      ],
+      "dxy_fn": 0.00513214926025186,
+      "seed": 20069
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.15916215427303007,
+        -0.02186422186498662,
+        0.17689867508804627
+      ],
+      "near_final": [
+        0.15865311170264632,
+        -0.024866759562074355,
+        0.15802143003283617
+      ],
+      "dxy_fn": 0.003045382892329931,
+      "seed": 20077
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.15974140112344443,
+        0.027668383273888267,
+        0.17681473911204335
+      ],
+      "near_final": [
+        0.15551871337678191,
+        0.026440333055690785,
+        0.15801694109209422
+      ],
+      "dxy_fn": 0.004397635631135054,
+      "seed": 20085
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.15332817090814682,
+        0.02554695384472217,
+        0.17690615072082774
+      ],
+      "near_final": [
+        0.15111804014269542,
+        0.02327493932323312,
+        0.1580210871103816
+      ],
+      "dxy_fn": 0.0031696573925665728,
+      "seed": 20093
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.14568552226014342,
+        0.0202329520729788,
+        0.17662104723373642
+      ],
+      "near_final": [
+        0.14207669109728382,
+        0.015053198861500213,
+        0.15800775208065665
+      ],
+      "dxy_fn": 0.006312963305282967,
+      "seed": 20006
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.14974024229743557,
+        0.045243413081641336,
+        0.17696712435943315
+      ],
+      "near_final": [
+        0.14915376993066937,
+        0.04347945454876401,
+        0.15802402095637846
+      ],
+      "dxy_fn": 0.0018588973997214293,
+      "seed": 20014
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.15542630201170302,
+        0.017159909868427473,
+        0.17695455038594643
+      ],
+      "near_final": [
+        0.1555083849465656,
+        0.01495781750378961,
+        0.1580233980245837
+      ],
+      "dxy_fn": 0.002203621653231795,
+      "seed": 20022
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.15426093960215845,
+        -0.012790010210343651,
+        0.176844414979483
+      ],
+      "near_final": [
+        0.1501770330984334,
+        -0.012629608400847156,
+        0.1580181184676382
+      ],
+      "dxy_fn": 0.004087055305676397,
+      "seed": 20030
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.18962771360535222,
+        -0.0010085958070660426,
+        0.17676365435825558
+      ],
+      "near_final": [
+        0.18465344141969633,
+        -0.0011917411232563123,
+        0.15801451088228735
+      ],
+      "dxy_fn": 0.004977642613108355,
+      "seed": 20038
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.18486331346666118,
+        0.010149983631813428,
+        0.1767216343517812
+      ],
+      "near_final": [
+        0.18070505470718976,
+        0.013545817867249656,
+        0.15801269846065014
+      ],
+      "dxy_fn": 0.00536868755519276,
+      "seed": 20046
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.1686913168914237,
+        0.034649682557363205,
+        0.17681746297128217
+      ],
+      "near_final": [
+        0.16486313103822933,
+        0.03242382859184913,
+        0.15801682129945524
+      ],
+      "dxy_fn": 0.004428253922528854,
+      "seed": 20054
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.1848854959943018,
+        0.035093636743810885,
+        0.17681659340783246
+      ],
+      "near_final": [
+        0.1808241441794909,
+        0.03354821286342188,
+        0.1580171447335502
+      ],
+      "dxy_fn": 0.0043454474491983475,
+      "seed": 20062
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.13453327028892836,
+        -0.030855452104630813,
+        0.17692789857342808
+      ],
+      "near_final": [
+        0.13292039749599716,
+        -0.03296089354370115,
+        0.15802242825273463
+      ],
+      "dxy_fn": 0.002652214602842744,
+      "seed": 20070
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.1860087394868959,
+        0.026599129709707542,
+        0.1769353737991318
+      ],
+      "near_final": [
+        0.183517323384525,
+        0.027436697620454004,
+        0.15802248456266454
+      ],
+      "dxy_fn": 0.002628435694527285,
+      "seed": 20078
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.16110309102957585,
+        0.012487183459822571,
+        0.1769125764272669
+      ],
+      "near_final": [
+        0.15812801542071545,
+        0.01176935904289181,
+        0.1580213901533416
+      ],
+      "dxy_fn": 0.003060448786040712,
+      "seed": 20086
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.1774222652105646,
+        0.030237448990377024,
+        0.17679756697715132
+      ],
+      "near_final": [
+        0.17345668406520073,
+        0.03255961043270048,
+        0.15801614608864928
+      ],
+      "dxy_fn": 0.0045954616291161736,
+      "seed": 20094
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.17281823342446137,
+        0.02106059381583591,
+        0.1767625633764612
+      ],
+      "near_final": [
+        0.1678563973561149,
+        0.02155940611397222,
+        0.15801446985717996
+      ],
+      "dxy_fn": 0.004986845784452927,
+      "seed": 20007
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.16450028101514425,
+        0.025427759481279504,
+        0.17692996769212066
+      ],
+      "near_final": [
+        0.163439603225983,
+        0.022905603196296725,
+        0.15802222738118005
+      ],
+      "dxy_fn": 0.0027361121501682122,
+      "seed": 20015
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.19404583966410466,
+        0.0214605963517792,
+        0.1593151484524908
+      ],
+      "near_final": [
+        0.17330567403683733,
+        0.020132096991226325,
+        0.15876637446662323
+      ],
+      "dxy_fn": 0.020782670203741156,
+      "seed": 20023
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.17564201814535665,
+        0.00017244971180656625,
+        0.17681201376182695
+      ],
+      "near_final": [
+        0.172859471561092,
+        0.0035400794895117968,
+        0.15801705461750024
+      ],
+      "dxy_fn": 0.004368466070978452,
+      "seed": 20031
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.1797910634205904,
+        -0.014872921190829166,
+        0.17689840385244085
+      ],
+      "near_final": [
+        0.17700243210330832,
+        -0.01663652395174696,
+        0.1580207128151208
+      ],
+      "dxy_fn": 0.0032995089516537498,
+      "seed": 20039
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.16954128564077053,
+        0.02931406233150504,
+        0.1768222161655967
+      ],
+      "near_final": [
+        0.16612226171366076,
+        0.031916839967630686,
+        0.15801733177844002
+      ],
+      "dxy_fn": 0.00429699616444615,
+      "seed": 20047
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.1628009975473791,
+        0.021550971133498742,
+        0.1768538667395758
+      ],
+      "near_final": [
+        0.15957564055460735,
+        0.02384981931321082,
+        0.1580185720638476
+      ],
+      "dxy_fn": 0.00396076137682985,
+      "seed": 20055
+    },
+    {
+      "farther": "b",
+      "nearer": "a",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.17887303095716944,
+        -0.010460742454159929,
+        0.17697805733681576
+      ],
+      "near_final": [
+        0.17737067329470682,
+        -0.010724633123322816,
+        0.15802452289330504
+      ],
+      "dxy_fn": 0.0015253579354470841,
+      "seed": 20063
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.14638218635111694,
+        -0.04220285261382884,
+        0.17691274761033596
+      ],
+      "near_final": [
+        0.143428958093368,
+        -0.042119750838567616,
+        0.15802167384746385
+      ],
+      "dxy_fn": 0.002954397239272062,
+      "seed": 20071
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": false,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": false,
+      "label": "placement_miss",
+      "far_final": [
+        0.19283053606010112,
+        0.0014020772704322136,
+        0.15876277849999687
+      ],
+      "near_final": [
+        0.1693493786945514,
+        -0.015761698713622065,
+        0.15876277850002063
+      ],
+      "dxy_fn": 0.029085390787412627,
+      "seed": 20079
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.16829843824531102,
+        0.024844412520373175,
+        0.17668196174500525
+      ],
+      "near_final": [
+        0.17261538007776678,
+        0.02110812511847756,
+        0.1580110064896482
+      ],
+      "dxy_fn": 0.005709275815230019,
+      "seed": 20087
+    },
+    {
+      "farther": "a",
+      "nearer": "b",
+      "success": true,
+      "grasp_success": true,
+      "correct_selection": true,
+      "place_on_top": true,
+      "label": "success",
+      "far_final": [
+        0.1497831385087478,
+        0.03793836375282586,
+        0.17690224272709867
+      ],
+      "near_final": [
+        0.14721975394793815,
+        0.03991880272122408,
+        0.15802088825735033
+      ],
+      "dxy_fn": 0.0032393022264289384,
+      "seed": 20095
+    }
+  ],
+  "solver_rows": []
+}

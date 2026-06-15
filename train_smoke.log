@@ -1,0 +1,13 @@
+device: cuda | chunk=8
+side images: (3458, 256, 256, 3) uint8 (0.7 GB)
+RAM plan: full dataset fits in RAM
+loaded side (3458, 256, 256, 3) in 0.4s
+episodes loaded: 68  frames loaded: 3458
+samples: train=2788  val=126  chunk=8
+model: 13.20M params, bottleneck=256, chunk=8, img_hw=(256, 256)
+epoch   1/2  train 0.92357  val 0.57147  lr 3.00e-04    2.4s  <- best, saved
+epoch   2/2  train 0.63523  val 0.46711  lr 1.50e-04    1.7s  <- best, saved
+  [eval epoch 2] launched bg subprocess pid=328966
+  [eval epoch 2] 0/100 = 0.0%
+
+Done. Best val 0.46711 -> bc_cube_stack_smoke.pt

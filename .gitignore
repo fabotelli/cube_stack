@@ -1,0 +1,9 @@
+# Large regenerable artifacts (kept in scp backup, not in git)
+*.npz
+*.pt
+*.w*.npy
+*.merge.*.npy
+*.ckpt.npz
+*.run.json
+__pycache__/
+.claude/
