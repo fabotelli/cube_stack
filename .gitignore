@@ -7,3 +7,5 @@
 *.run.json
 __pycache__/
 .claude/
+*.pid
+pipeline_run.done

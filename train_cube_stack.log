@@ -1,44 +1,8 @@
 device: cuda | chunk=8
 side images: (373051, 256, 256, 3) uint8 (73.3 GB)
 RAM plan: full dataset fits in RAM
-loaded side (373051, 256, 256, 3) in 41.1s
+loaded side (373051, 256, 256, 3) in 37.2s
 episodes loaded: 7270  frames loaded: 373051
 samples: train=299053  val=15838  chunk=8
 model: 13.20M params, bottleneck=256, chunk=8, img_hw=(256, 256)
-epoch   1/25  train 0.09544  val 0.02581  lr 3.00e-04   92.3s  <- best, saved
-epoch   2/25  train 0.02247  val 0.01813  lr 2.99e-04   90.4s  <- best, saved
-epoch   3/25  train 0.01653  val 0.01408  lr 2.95e-04   91.0s  <- best, saved
-epoch   4/25  train 0.01321  val 0.01185  lr 2.89e-04   90.3s  <- best, saved
-epoch   5/25  train 0.01101  val 0.01064  lr 2.81e-04   90.1s  <- best, saved
-  [eval epoch 5] launched bg subprocess pid=348085
-epoch   6/25  train 0.00950  val 0.00885  lr 2.71e-04   94.1s  <- best, saved
-epoch   7/25  train 0.00842  val 0.00767  lr 2.59e-04   94.3s  <- best, saved
-epoch   8/25  train 0.00749  val 0.00759  lr 2.46e-04   94.5s  <- best, saved
-epoch   9/25  train 0.00678  val 0.00674  lr 2.30e-04   93.8s  <- best, saved
-epoch  10/25  train 0.00614  val 0.00604  lr 2.14e-04   94.0s  <- best, saved
-  [eval epoch 10] launched bg subprocess pid=349203
-epoch  11/25  train 0.00566  val 0.00557  lr 1.96e-04  112.1s  <- best, saved
-epoch  12/25  train 0.00505  val 0.00598  lr 1.78e-04  108.8s
-epoch  13/25  train 0.00467  val 0.00515  lr 1.59e-04  106.1s  <- best, saved
-epoch  14/25  train 0.00423  val 0.00481  lr 1.41e-04  101.7s  <- best, saved
-  [eval epoch 5] 76/100 = 76.0%  (sel=95 grasp=95 place_on_top=76)
-epoch  15/25  train 0.00378  val 0.00480  lr 1.22e-04   99.4s  <- best, saved
-  [eval epoch 15] launched bg subprocess pid=350357
-epoch  16/25  train 0.00344  val 0.00434  lr 1.04e-04  107.8s  <- best, saved
-epoch  17/25  train 0.00311  val 0.00419  lr 8.62e-05  107.1s  <- best, saved
-epoch  18/25  train 0.00282  val 0.00398  lr 6.97e-05  108.4s  <- best, saved
-epoch  19/25  train 0.00258  val 0.00375  lr 5.45e-05  101.5s  <- best, saved
-  [eval epoch 10] 84/100 = 84.0%  (sel=96 grasp=96 place_on_top=84)
-epoch  20/25  train 0.00237  val 0.00377  lr 4.07e-05   97.8s
-  [eval epoch 20] launched bg subprocess pid=351519
-epoch  21/25  train 0.00217  val 0.00355  lr 2.87e-05  107.1s  <- best, saved
-epoch  22/25  train 0.00204  val 0.00346  lr 1.86e-05  105.8s  <- best, saved
-epoch  23/25  train 0.00193  val 0.00343  lr 1.06e-05  106.4s  <- best, saved
-epoch  24/25  train 0.00186  val 0.00342  lr 4.81e-06  103.4s  <- best, saved
-epoch  25/25  train 0.00180  val 0.00339  lr 1.28e-06  101.2s  <- best, saved
-  [eval epoch 25] launched bg subprocess pid=352661
-  [eval epoch 15] 88/100 = 88.0%  (sel=96 grasp=96 place_on_top=88)
-  [eval epoch 20] 86/100 = 86.0%
-  [eval epoch 25] 91/100 = 91.0%
-
-Done. Best val 0.00339 -> bc_cube_stack.pt
+epoch   1/25  train 0.09544  val 0.02581  lr 3.00e-04   73.3s  <- best, saved
