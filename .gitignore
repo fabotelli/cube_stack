@@ -9,3 +9,6 @@ __pycache__/
 .claude/
 *.pid
 pipeline_run.done
+
+# track the final policy
+!bc_cube_stack.pt
